@@ -20,6 +20,7 @@
 		FC296A232828772200E035D9 /* Movie_APPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC296A222828772200E035D9 /* Movie_APPUITestsLaunchTests.swift */; };
 		FC296A32282879BA00E035D9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC296A31282879BA00E035D9 /* Movie.swift */; };
 		FC296A3428287BF100E035D9 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC296A3328287BF100E035D9 /* CollectionViewCell.swift */; };
+		FC9594BC2828A519007A7406 /* DetailsMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9594BB2828A519007A7406 /* DetailsMovieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		FC296A222828772200E035D9 /* Movie_APPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_APPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FC296A31282879BA00E035D9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		FC296A3328287BF100E035D9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FC9594BB2828A519007A7406 /* DetailsMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMovieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,6 @@
 				659A8A98537C85F31BDE5296 /* Pods-Movie_APP.debug.xcconfig */,
 				810298C45A5DCB2C0377FD13 /* Pods-Movie_APP.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,16 +131,15 @@
 		FC2969FB2828771F00E035D9 /* Movie_APP */ = {
 			isa = PBXGroup;
 			children = (
+				FC9594B82828A4AD007A7406 /* Model */,
+				FC9594B72828A4A1007A7406 /* View Controller */,
+				FC9594B62828A497007A7406 /* View */,
 				FC2969FC2828771F00E035D9 /* AppDelegate.swift */,
 				FC2969FE2828771F00E035D9 /* SceneDelegate.swift */,
-				FC296A002828771F00E035D9 /* ViewController.swift */,
-				FC296A3328287BF100E035D9 /* CollectionViewCell.swift */,
-				FC296A022828771F00E035D9 /* Main.storyboard */,
 				FC296A082828772100E035D9 /* Assets.xcassets */,
 				FC296A0A2828772100E035D9 /* LaunchScreen.storyboard */,
 				FC296A0D2828772100E035D9 /* Info.plist */,
 				FC296A052828771F00E035D9 /* Movie_APP.xcdatamodeld */,
-				FC296A31282879BA00E035D9 /* Movie.swift */,
 			);
 			path = Movie_APP;
 			sourceTree = "<group>";
@@ -159,6 +159,48 @@
 				FC296A222828772200E035D9 /* Movie_APPUITestsLaunchTests.swift */,
 			);
 			path = Movie_APPUITests;
+			sourceTree = "<group>";
+		};
+		FC9594B62828A497007A7406 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC296A022828771F00E035D9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC9594B72828A4A1007A7406 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC296A002828771F00E035D9 /* ViewController.swift */,
+				FC296A3328287BF100E035D9 /* CollectionViewCell.swift */,
+				FC9594BB2828A519007A7406 /* DetailsMovieViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		FC9594B82828A4AD007A7406 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC9594BA2828A4EA007A7406 /* DataBaseManger */,
+				FC9594B92828A4E0007A7406 /* Pojo */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC9594B92828A4E0007A7406 /* Pojo */ = {
+			isa = PBXGroup;
+			children = (
+				FC296A31282879BA00E035D9 /* Movie.swift */,
+			);
+			path = Pojo;
+			sourceTree = "<group>";
+		};
+		FC9594BA2828A4EA007A7406 /* DataBaseManger */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataBaseManger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC296A012828771F00E035D9 /* ViewController.swift in Sources */,
+				FC9594BC2828A519007A7406 /* DetailsMovieViewController.swift in Sources */,
 				FC2969FD2828771F00E035D9 /* AppDelegate.swift in Sources */,
 				FC296A3428287BF100E035D9 /* CollectionViewCell.swift in Sources */,
 				FC296A072828771F00E035D9 /* Movie_APP.xcdatamodeld in Sources */,

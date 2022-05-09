@@ -36,6 +36,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 //                    print(i.title)
 //                }
             }
+            DispatchQueue.main.sync {
+                self.movieCollectionView.reloadData()
+            }
         }
         task.resume()
     }
@@ -56,6 +59,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 200, height: 200)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "DetailsMovieViewController") as! DetailsMovieViewController
+        vc.comingMsg = movieArray[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
