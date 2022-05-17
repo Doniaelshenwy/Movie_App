@@ -20,6 +20,7 @@
 		FC296A232828772200E035D9 /* Movie_APPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC296A222828772200E035D9 /* Movie_APPUITestsLaunchTests.swift */; };
 		FC296A32282879BA00E035D9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC296A31282879BA00E035D9 /* Movie.swift */; };
 		FC296A3428287BF100E035D9 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC296A3328287BF100E035D9 /* CollectionViewCell.swift */; };
+		FC4E1E8F282DEC7C00C3B94F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4E1E8E282DEC7C00C3B94F /* LoginViewController.swift */; };
 		FC9594BC2828A519007A7406 /* DetailsMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9594BB2828A519007A7406 /* DetailsMovieViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		FC296A222828772200E035D9 /* Movie_APPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_APPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FC296A31282879BA00E035D9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		FC296A3328287BF100E035D9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FC4E1E8E282DEC7C00C3B94F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FC9594BB2828A519007A7406 /* DetailsMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMovieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +177,7 @@
 				FC296A002828771F00E035D9 /* ViewController.swift */,
 				FC296A3328287BF100E035D9 /* CollectionViewCell.swift */,
 				FC9594BB2828A519007A7406 /* DetailsMovieViewController.swift */,
+				FC4E1E8E282DEC7C00C3B94F /* LoginViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				FC9594BC2828A519007A7406 /* DetailsMovieViewController.swift in Sources */,
 				FC2969FD2828771F00E035D9 /* AppDelegate.swift in Sources */,
 				FC296A3428287BF100E035D9 /* CollectionViewCell.swift in Sources */,
+				FC4E1E8F282DEC7C00C3B94F /* LoginViewController.swift in Sources */,
 				FC296A072828771F00E035D9 /* Movie_APP.xcdatamodeld in Sources */,
 				FC2969FF2828771F00E035D9 /* SceneDelegate.swift in Sources */,
 				FC296A32282879BA00E035D9 /* Movie.swift in Sources */,

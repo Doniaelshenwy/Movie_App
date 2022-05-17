@@ -16,6 +16,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var movieArray : [Movie] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(UserDefaults.standard.bool(forKey: "Login state"))
         let url = URL(string: "https://api.androidhive.info/json/movies.json")
         let request = URLRequest(url: url!)
         let session = URLSession(configuration: URLSessionConfiguration.default)
