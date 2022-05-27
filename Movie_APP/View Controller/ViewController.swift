@@ -17,7 +17,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(UserDefaults.standard.bool(forKey: "Login state"))
+        //print(UserDefaults.standard.bool(forKey: "Login state"))
         let url = URL(string: "https://api.androidhive.info/json/movies.json")
         let request = URLRequest(url: url!)
         let session = URLSession(configuration: URLSessionConfiguration.default)
@@ -66,7 +66,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "DetailsMovieViewController") as! DetailsMovieViewController
         vc.comingMsg = movieArray[indexPath.row]
-        self.navigationController?.pushViewController(vc, animated: true)
+       self.navigationController?.pushViewController(vc, animated: true)
+//        if let delegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
+//
+//                            delegate.window?.rootViewController = vc
+//                            delegate.window?.makeKeyAndVisible()
+//
+//                    }
     }
 }
 

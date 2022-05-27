@@ -17,6 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        
+        let isLogged = UserDefaults.standard.bool(forKey: "Login state")
+        if isLogged{
+//        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController
+//
+//        if let delegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
+//
+//                            delegate.window?.rootViewController = vc
+//                            delegate.window?.makeKeyAndVisible()
+//
+//                    }
+
+            
+            let story = UIStoryboard(name: "Main", bundle:nil)
+            let vc = story.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+            UIApplication.shared.windows.first?.rootViewController = vc
+            UIApplication.shared.windows.first?.makeKeyAndVisible()
+        }
         return true
     }
 

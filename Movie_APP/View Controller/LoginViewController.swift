@@ -45,9 +45,8 @@ class LoginViewController: UIViewController {
                                 delegate.window?.makeKeyAndVisible()
 
                         }
-           
-//           let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//           appDelegate.window?.rootViewController = vc
+           //           let appDelegate = UIApplication.shared.delegate as! AppDelegate
+          //            appDelegate.window?.rootViewController = vc
             
           //  self.navigationController?.pushViewController(vc, animated: true)
                 
